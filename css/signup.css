@@ -1,0 +1,160 @@
+
+
+body{
+	background-color: #283673;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg %3E%3Cpolygon fill='%233d448f' points='100 57.1 64 93.1 71.5 100.6 100 72.1'/%3E%3Cpolygon fill='%234a52ad' points='100 57.1 100 72.1 128.6 100.6 136.1 93.1'/%3E%3Cpolygon fill='%233d448f' points='100 163.2 100 178.2 170.7 107.5 170.8 92.4'/%3E%3Cpolygon fill='%234a52ad' points='100 163.2 29.2 92.5 29.2 107.5 100 178.2'/%3E%3Cpath fill='%235761cc' d='M100 21.8L29.2 92.5l70.7 70.7l70.7-70.7L100 21.8z M100 127.9L64.6 92.5L100 57.1l35.4 35.4L100 127.9z'/%3E%3Cpolygon fill='%232e8f85' points='0 157.1 0 172.1 28.6 200.6 36.1 193.1'/%3E%3Cpolygon fill='%2337ada2' points='70.7 200 70.8 192.4 63.2 200'/%3E%3Cpolygon fill='%2341ccbe' points='27.8 200 63.2 200 70.7 192.5 0 121.8 0 157.2 35.3 192.5'/%3E%3Cpolygon fill='%2337ada2' points='200 157.1 164 193.1 171.5 200.6 200 172.1'/%3E%3Cpolygon fill='%232e8f85' points='136.7 200 129.2 192.5 129.2 200'/%3E%3Cpolygon fill='%2341ccbe' points='172.1 200 164.6 192.5 200 157.1 200 157.2 200 121.8 200 121.8 129.2 192.5 136.7 200'/%3E%3Cpolygon fill='%232e8f85' points='129.2 0 129.2 7.5 200 78.2 200 63.2 136.7 0'/%3E%3Cpolygon fill='%2341ccbe' points='200 27.8 200 27.9 172.1 0 136.7 0 200 63.2 200 63.2'/%3E%3Cpolygon fill='%2337ada2' points='63.2 0 0 63.2 0 78.2 70.7 7.5 70.7 0'/%3E%3Cpolygon fill='%2341ccbe' points='0 63.2 63.2 0 27.8 0 0 27.8'/%3E%3C/g%3E%3C/svg%3E");
+	margin:0;
+	color:#6a6f8c;
+	font:600 16px/18px 'Open Sans',sans-serif;
+}
+
+
+
+.login-page{
+    padding: 1.5rem 1.5rem;
+}
+*,:after,:before{box-sizing:border-box}
+.clearfix:after,.clearfix:before{content:'';display:table}
+.clearfix:after{clear:both;display:block}
+a{color:inherit;text-decoration:none}
+
+.login-wrap{
+	width:100%;
+	margin:auto;
+	max-width:525px;
+	min-height:670px;
+	position:relative;
+	background:url(https://raw.githubusercontent.com/khadkamhn/day-01-login-form/master/img/bg.jpg) no-repeat center;
+	box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+}
+.login-html{
+	width:100%;
+	height:100%;
+	position:absolute;
+	padding:90px 70px 50px 70px;
+	background:rgba(14, 26, 20, 0.9);
+}
+.login-html .sign-in-htm,
+.login-html .sign-up-htm{
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	position:absolute;
+	transform:rotateY(180deg);
+	backface-visibility:hidden;
+	transition:all .4s linear;
+}
+.login-html .sign-in,
+.login-html .sign-up,
+.login--form .groupp .check{
+	display:none;
+}
+.login-html .tab,
+.login--form .groupp .label,
+.login--form .groupp .button{
+	text-transform:uppercase;
+}
+.login-html .tab{
+	font-size:22px;
+    margin-right:15px;
+    padding-top: 5px;
+	padding-bottom:5px;
+	margin:0 15px 10px 0;
+	display:inline-block;
+	border-bottom:2px solid transparent;
+}
+.login-html .sign-in:checked + .tab,
+.login-html .sign-up:checked + .tab{
+	color:#fff;
+	border-color:#1161ee;
+}
+.login--form{
+	min-height:345px;
+	position:relative;
+	perspective:1000px;
+	transform-style:preserve-3d;
+}
+.login--form .groupp{
+	margin-bottom:15px;
+}
+.login--form .groupp .label,
+.login--form .groupp .input,
+.login--form .groupp .button{
+	width:100%;
+	color:#fff;
+	display:block;
+}
+.login--form .groupp .input,
+.login--form .groupp .button{
+	border:none;
+	padding:15px 20px;
+	border-radius:25px;
+	background:rgba(255,255,255,.1);
+}
+.login--form .groupp input[data-type="password"]{
+	text-security:circle;
+	-webkit-text-security:circle;
+}
+.login--form .groupp .label{
+	color:#aaa;
+	font-size:12px;
+}
+.login--form .groupp .button{
+	background:#1161ee;
+}
+.login--form .groupp label .icon{
+	width:15px;
+	height:15px;
+	border-radius:2px;
+	position:relative;
+	display:inline-block;
+	background:rgba(255,255,255,.1);
+}
+.login--form .groupp label .icon:before,
+.login--form .groupp label .icon:after{
+	content:'';
+	width:10px;
+	height:2px;
+	background:#fff;
+	position:absolute;
+	transition:all .2s ease-in-out 0s;
+}
+.login--form .groupp label .icon:before{
+	left:3px;
+	width:5px;
+	bottom:6px;
+	transform:scale(0) rotate(0);
+}
+.login--form .groupp label .icon:after{
+	top:6px;
+	right:0;
+	transform:scale(0) rotate(0);
+}
+.login--form .groupp .check:checked + label{
+	color:#fff;
+}
+.login--form .groupp .check:checked + label .icon{
+	background:#1161ee;
+}
+.login--form .groupp .check:checked + label .icon:before{
+	transform:scale(1) rotate(45deg);
+}
+.login--form .groupp .check:checked + label .icon:after{
+	transform:scale(1) rotate(-45deg);
+}
+.login-html .sign-in:checked + .tab + .sign-up + .tab + .login--form .sign-in-htm{
+	transform:rotate(0);
+}
+.login-html .sign-up:checked + .tab + .login--form .sign-up-htm{
+	transform:rotate(0);
+}
+
+.hr{
+	height:2px;
+	margin:60px 0 50px 0;
+	background:rgba(255,255,255,.2);
+}
+.foot-lnk{
+	text-align:center;
+}
